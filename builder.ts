@@ -48,5 +48,5 @@ class BurgerBuilder {
 
 const burger2 = new BurgerBuilder('wheat')
 
-
+// method chaining
 burger2.addKetchUp().addKraut().addMustrad().bake()
