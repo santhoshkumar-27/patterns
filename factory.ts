@@ -36,3 +36,4 @@ const bFactory = new ButtonFactory();
 
 const button3 = bFactory.createButton(os);
 const button4 = bFactory.createButton(os);
+// smart object creation
