@@ -19,3 +19,20 @@ const os = 'ios'
 
 const button1 = os === 'ios' ? new IoSButton : new AndroidButton;
 const button2 = os === 'ios' ? new IoSButton : new AndroidButton;
+
+
+// Factory button
+class ButtonFactory {
+    createButton(os: string):IoSButton | AndroidButton {
+        if (os === 'ios') {
+            return  new IoSButton
+        }
+
+        return new AndroidButton
+    }
+}
+
+const bFactory = new ButtonFactory();
+
+const button3 = bFactory.createButton(os);
+const button4 = bFactory.createButton(os);
