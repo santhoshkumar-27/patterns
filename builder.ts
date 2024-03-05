@@ -32,7 +32,7 @@ class BurgerBuilder {
 
     addMustrad() {
         this.mustrad = true;
-        return this;
+        return this; // return this object means reference to the object
     }
 
     addKraut() {
