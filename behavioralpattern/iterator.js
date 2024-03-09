@@ -35,6 +35,7 @@ function range(start, end, step = 1) {
     }
 }
 
+// and its pull based get value from that functions
 for (const item of range(1, 5, 1)) {
     console.log('item', item);
 }
