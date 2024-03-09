@@ -20,5 +20,5 @@ const data = {
 
 
 // its in the vue js
-
+// reactive system in the vue.js intercept data and updated the UI changes, using the proxy of data
 const proxer = new proxy(data)
