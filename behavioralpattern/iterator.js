@@ -17,20 +17,12 @@ function range(start, end, step = 1) {
             return this
         },
         next() {
-
-            if (start < end) {
+            let result = { done: start > end };
+            if (!result.done) {
+                result.value = start;
                 start += step;
-
-                return {
-                    done: false,
-                    value: start
-                }
             }
-
-            return {
-                done: true,
-                value: end
-            }
+            return result;
         }
     }
 }
