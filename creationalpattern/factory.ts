@@ -17,18 +17,18 @@ class AndroidButton {
 
 const os = 'ios'
 
-const button1 = os === 'ios' ? new IoSButton : new AndroidButton;
-const button2 = os === 'ios' ? new IoSButton : new AndroidButton;
+const button1 = os === 'ios' ? new IoSButton() : new AndroidButton();
+const button2 = os === 'ios' ? new IoSButton() : new AndroidButton();
 
 
 // Factory button
 class ButtonFactory {
     createButton(os: string):IoSButton | AndroidButton {
         if (os === 'ios') {
-            return  new IoSButton
+            return  new IoSButton()
         }
 
-        return new AndroidButton
+        return new AndroidButton()
     }
 }
 
