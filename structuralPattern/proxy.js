@@ -24,3 +24,8 @@ const proxer = new Proxy(data, {
         return Reflect.set(target, key, value) // and update to original data
     }
 })
+
+
+proxer.key // string
+
+proxer.value = 2 // during setting we updated the re-render
