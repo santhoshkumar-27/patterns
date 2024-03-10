@@ -26,3 +26,10 @@ class Tower {
         }
     }
 }
+
+
+// these pattern is used in the many of the frameworks
+/*
+    Angular - interceptor,
+    express - middlewares
+*/
